@@ -1,0 +1,87 @@
+/* Reset basic styles */
+*
+{
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Navigation Bar */
+nav#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+nav#navbar.scrolled {
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Navigation Menu Items */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Dummy content styling */
+.content {
+  padding-top: 100px;
+  text-align: center;
+}
+section {
+  height: 2000px;
+  padding: 100px 20px;
+  background: linear-gradient(#6a11cb, #2575fc);
+  color: white;
+
+  /* Center text horizontally & vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical */
+  align-items: center;     /* horizontal */
+  text-align: center;      /* for multi-line text */
+}
+/* Style for the content section */
+section#content {
+  text-align: center; /* Centers text horizontally */
+  padding-top: 100px; /* Push content down so it's not hidden under fixed navbar */
+}
+
+/* Style the heading */
+section#content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style the paragraph */
+section#content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+
